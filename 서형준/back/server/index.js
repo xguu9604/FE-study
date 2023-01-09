@@ -102,6 +102,10 @@ app.get('/api/users/logout', auth, (req, res) => {
 })
 
 
+app.get('/api/hello', (req, res) => {
+
+  res.send("하이룽~")
+})
 
 // 포트 기준으로 페이지 생성
 app.listen(port, () => {
